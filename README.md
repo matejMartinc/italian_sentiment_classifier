@@ -24,7 +24,7 @@ Predict sentiment:<br/>
 If you want to predict sentiment for just one document/tweet, you can do this in the following way:
 
 ```
-python predict.py --input_string "some Italian text" --text_column text --output_path results.tsv
+python predict.py --input_string "some Italian text"
 ```
 
 If you want to predict sentiment for an entire corpus, call this:
