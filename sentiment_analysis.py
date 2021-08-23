@@ -154,7 +154,6 @@ def preprocess(df_data):
 
 
 def createFeatures(df_data):
-    folder_path = os.path.dirname(os.path.realpath(__file__))
     emoji_path = os.path.join('model', 'emoji_dataset.csv')
     emoji_dict = get_emojis(emoji_path)
     emoji_list = emoji_dict.keys()

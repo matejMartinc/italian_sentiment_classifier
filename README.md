@@ -10,7 +10,25 @@ Note that versions of scikit-learn newer than 0.20.3 will not work!
 
 ### Instructions: ###
 
+Train the classifier:<br/>
+
+You need a train set in a csv format. The csv file should have columns id, text and target (with sentiment scores). 
+To train the classifier just run:
+
+```
+python train.py --train_dataset 'pathToTheCSV'
+```
+
 Predict sentiment:<br/>
+
+If you want to predict sentiment for just one document/tweet, you can do this in the following way:
+
+```
+python predict.py --input_string "some Italian text" --text_column text --output_path results.tsv
+```
+
+If you want to predict corpus for an entire corpus, call this:
+
 ```
 python predict.py --input_path example_data/example.tsv --text_column text --output_path results.tsv
 ```
