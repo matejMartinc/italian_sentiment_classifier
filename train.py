@@ -50,7 +50,7 @@ if __name__ == '__main__':
 
     # build classification model
 
-    lr = LogisticRegression(C=1e2, multi_class='ovr', solver='liblinear', fit_intercept=False, random_state=123)
+    lr = LogisticRegression(multi_class='ovr', solver='liblinear', random_state=123)
     tfidf_unigram = TfidfVectorizer(ngram_range=(1, 1), sublinear_tf=True, min_df=10, max_df=0.8)
     tfidf_bigram = TfidfVectorizer(ngram_range=(2, 2), sublinear_tf=False, min_df=20, max_df=0.5)
     tfidf_pos = TfidfVectorizer(ngram_range=(2, 2), sublinear_tf=True, min_df=0.1, max_df=0.6, lowercase=False)
