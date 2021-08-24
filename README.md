@@ -6,8 +6,6 @@ Published results were produced in Python 3 programming environment on Linux Min
 
 Install dependencies if needed: pip install -r requirements.txt
 
-Note that versions of scikit-learn newer than 0.20.3 will not work!
-
 ### Instructions: ###
 
 Train the classifier:<br/>
